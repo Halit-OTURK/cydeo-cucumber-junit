@@ -21,8 +21,8 @@ public class GoogleStepDefinitions {
 
     }
 
-    @When("user types {string} and clicks enter")
-    public void user_types_and_clicks_enter(String searchKeyword) {
+    @When("user types {string} and clicks enter") // {string}
+    public void user_types_and_clicks_enter(String searchKeyword) { // takes parameter
 
 //        WebDriverWait wait = new WebDriverWait(Driver.getDriver(),10);
 //        wait.until(ExpectedConditions.visibilityOf(googleSearchPage.searchBox));

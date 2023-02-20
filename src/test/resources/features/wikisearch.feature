@@ -1,3 +1,4 @@
+@wiki
 Feature: Wikipedia search functionality and verifications
   Scenario:  Wikipedia Search Functionality Title Verification
   Given User is on Wikipedia home page

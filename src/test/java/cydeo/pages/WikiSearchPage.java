@@ -12,12 +12,12 @@ public class WikiSearchPage {
     }
 
     @FindBy(id = "searchInput")
-    public static WebElement searchBox;
+    public WebElement searchBox;
 
     @FindBy(xpath = "//button[@type='submit']")
-    public static WebElement searchButton;
+    public WebElement searchButton;
 
     @FindBy (id= "firstHeading")
-    public static WebElement mainHeader;
+    public WebElement mainHeader;
 
 }

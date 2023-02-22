@@ -22,7 +22,7 @@ public class WebTableLoginPage {
 
     /**
      * No parameters.
-     * When we call this method, it will directly login using
+     * When we call this method, it will directly log in using
 
      * Username: Test
      * Password: Tester

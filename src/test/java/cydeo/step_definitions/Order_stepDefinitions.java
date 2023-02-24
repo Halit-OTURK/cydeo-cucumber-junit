@@ -2,6 +2,7 @@ package cydeo.step_definitions;
 
 import cydeo.pages.BasePage;
 import cydeo.pages.OrderPage;
+import cydeo.pages.ViewAllOrdersPage;
 import cydeo.pages.WebTableLoginPage;
 import cydeo.utilities.BrowserUtils;
 import cydeo.utilities.ConfigurationReader;
@@ -18,6 +19,7 @@ public class Order_stepDefinitions {
     WebTableLoginPage webTableLoginPage = new WebTableLoginPage(); // use same page both two tasks
     BasePage basePage = new BasePage();
     OrderPage orderPage = new OrderPage();
+    ViewAllOrdersPage viewAllOrdersPage = new ViewAllOrdersPage();
 
     @Given("user is already logged in and on order page")
     public void user_is_already_logged_in_and_on_order_page() {
@@ -29,7 +31,7 @@ public class Order_stepDefinitions {
     @When("user selects product type {string}")
     public void user_selects_product_type(String string) {
         Select select = new Select(orderPage.productDropdown);
-        select.deselectByVisibleText(string);
+        select.selectByVisibleText(string);
 
     }
 
@@ -92,8 +94,11 @@ public class Order_stepDefinitions {
     }
 
     @Then("user should see {string} in first row of the web table")
-    public void user_should_see_in_first_row_of_the_web_table(String string) {
-        // Write code here that turns the phrase above into concrete actions
+    public void user_should_see_in_first_row_of_the_web_table(String expectedName) {
+        String actualName = viewAllOrdersPage.newCustomerCell.getText();
+
+        Assert.assertEquals(expectedName, actualName);
+
 
     }
 }

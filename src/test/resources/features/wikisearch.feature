@@ -1,11 +1,12 @@
 @wiki
 Feature: Wikipedia search functionality and verifications
+
   Scenario:  Wikipedia Search Functionality Title Verification
-  Given User is on Wikipedia home page
-  When User types "Steve Jobs" in the wiki search box
-  And User clicks wiki search button
-  Then User sees "Steve Jobs" is in the wiki title
-  Then User sees "Steve Jobs" is in the main header
+    Given User is on Wikipedia home page
+    When User types "Steve Jobs" in the wiki search box
+    And User clicks wiki search button
+    Then User sees "Steve Jobs" is in the wiki title
+    Then User sees "Steve Jobs" is in the main header
 
   Scenario:  Wikipedia Search Functionality Title Verification
     Given User is on Wikipedia home page
@@ -16,12 +17,12 @@ Feature: Wikipedia search functionality and verifications
 
 
   Scenario:Wikipedia Search Functionality Header Verification
-  Given User is on Wikipedia home page
-  When User types "Steve Jobs" in the wiki search box
-  And User clicks wiki search button
-  Then User sees "Steve Jobs" is in the main header
+    Given User is on Wikipedia home page
+    When User types "Steve Jobs" in the wiki search box
+    And User clicks wiki search button
+    Then User sees "Steve Jobs" is in the main header
 
-    @ScenarioOutline
+  @ScenarioOutline
   Scenario Outline:  Wikipedia Search Functionality Title Verification
     Given User is on Wikipedia home page
     When User types "<searchValue>" in the wiki search box
@@ -41,7 +42,7 @@ Feature: Wikipedia search functionality and verifications
     @scientists
     Examples:
       | searchValue  | expectedTitle | expectedMainHeader |
-      | Marie Curie  |    | Marie Curie        |
+      | Marie Curie  | Marie Curie   | Marie Curie        |
       | Lady Gaga    | Lady Gaga     | Lady Gaga          |
       | Kate Winslet | Kate Winslet  | Kate Winslet       |
 

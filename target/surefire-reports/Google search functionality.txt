@@ -1,43 +1,43 @@
 -------------------------------------------------------------------------------
 Test set: Google search functionality
 -------------------------------------------------------------------------------
-Tests run: 11, Failures: 5, Errors: 2, Skipped: 0, Time elapsed: 181.774 s <<< FAILURE! - in Google search functionality
-Google search functionality.Search functionality result title verification #1  Time elapsed: 13.108 s  <<< FAILURE!
+Tests run: 11, Failures: 5, Errors: 2, Skipped: 0, Time elapsed: 870.154 s <<< FAILURE! - in Google search functionality
+Google search functionality.Search functionality result title verification #1  Time elapsed: 127.948 s  <<< FAILURE!
 org.junit.ComparisonFailure: Title is not as expected! expected:<apple - Google[ Search]> but was:<apple - Google['da Ara]>
 
-Google search functionality.Search functionality result title verification #2  Time elapsed: 21.355 s  <<< FAILURE!
+Google search functionality.Search functionality result title verification #2  Time elapsed: 168.276 s  <<< FAILURE!
 org.junit.ComparisonFailure: Title is not as expected! expected:<apple - Google[ Search]> but was:<apple - Google['da Ara]>
 
-Google search functionality.Data Driven Testing Format preparation  Time elapsed: 29.546 s  <<< ERROR!
+Google search functionality.Data Driven Testing Format preparation  Time elapsed: 144.441 s  <<< ERROR!
 org.openqa.selenium.NoSuchElementException: 
 no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='FLP8od']"}
-  (Session info: chrome=110.0.5481.105)
+  (Session info: chrome=110.0.5481.178)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-OD84LQK', ip: '192.168.2.123', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.105, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\TOSHBA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53346}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 777b008d6296edcc3836491f7c96652a
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\TOSHBA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49476}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8ba69735e34efa0744c6305c96b7f217
 *** Element info: {Using=xpath, value=//a[@class='FLP8od']}
 
-Google search functionality.Search functionality in a Data Driven Testing Format #1  Time elapsed: 25.385 s  <<< ERROR!
+Google search functionality.Search functionality in a Data Driven Testing Format #1  Time elapsed: 264.698 s  <<< ERROR!
 org.openqa.selenium.NoSuchElementException: 
 no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='FLP8od']"}
-  (Session info: chrome=110.0.5481.105)
+  (Session info: chrome=110.0.5481.178)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-OD84LQK', ip: '192.168.2.123', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.105, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\TOSHBA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53386}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 989e42baa29622e1fbd508d69eaf840c
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\TOSHBA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49682}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 465c60dbd3ab3f4a299114f8986a6098
 *** Element info: {Using=xpath, value=//a[@class='FLP8od']}
 
-Google search functionality.Search functionality in a Data Driven Testing Format #3  Time elapsed: 13.622 s  <<< FAILURE!
+Google search functionality.Search functionality in a Data Driven Testing Format #3  Time elapsed: 18.054 s  <<< FAILURE!
 org.junit.ComparisonFailure: expected:<Ki[vy]> but was:<Ki[ev]>
 
-Google search functionality.Search functionality in a Data Driven Testing Format #5  Time elapsed: 10.973 s  <<< FAILURE!
+Google search functionality.Search functionality in a Data Driven Testing Format #5  Time elapsed: 16.355 s  <<< FAILURE!
 org.junit.ComparisonFailure: expected:<Lond[on]> but was:<Lond[ra]>
 
-Google search functionality.Search functionality in a Data Driven Testing Format #7  Time elapsed: 14.048 s  <<< FAILURE!
+Google search functionality.Search functionality in a Data Driven Testing Format #7  Time elapsed: 14.408 s  <<< FAILURE!
 org.junit.ComparisonFailure: expected:<At[hens]> but was:<At[ina]>
 

@@ -477,7 +477,15 @@ for given duration
     public static void waitForPresenceOfElement(By by, long time) {
         new WebDriverWait(Driver.getDriver(), time).until(ExpectedConditions.presenceOfElementLocated(by));
     }
+    public static boolean iframechecker(){
+        List<WebElement> iframes=Driver.getDriver().findElements(By.tagName("iframe"));
 
+        if(iframes.size()==0){
+            return false;
+        }else{
+            return true;
+        }
+    }
 }
 /*
 TC #2: Create utility method
